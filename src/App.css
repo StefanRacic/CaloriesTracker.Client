@@ -1,0 +1,13 @@
+.btn-primary {
+  background-color: #82d6dc;
+  color: white;
+}
+.btn-primary:hover {
+  color: white;
+}
+.calories-section {
+  padding-top: 3rem;
+}
+.add-form input {
+  margin: 10px 0;
+}
