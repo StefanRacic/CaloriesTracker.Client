@@ -7,26 +7,30 @@ import Register from '../src/components/auth/Register';
 import CalorieTracker from '../src/pages/CalorieTracker';
 
 import 'bulma/css/bulma.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 import './App.css';
 
 import NavBar from '../src/components/NavBar';
 import AuthState from './context/auth/AuthState';
+import MealsState from './context/meals/MealsState';
 
 function App() {
   return (
     <AuthState>
-      <Router>
-        <Fragment>
-          <NavBar />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/register" component={Register} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/meals" component={CalorieTracker} />
-          </Switch>
-        </Fragment>
-      </Router>
+      <MealsState>
+        <Router>
+          <Fragment>
+            <NavBar />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/register" component={Register} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/meals" component={CalorieTracker} />
+            </Switch>
+          </Fragment>
+        </Router>
+      </MealsState>
     </AuthState>
   );
 }
