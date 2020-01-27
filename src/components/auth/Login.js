@@ -37,7 +37,7 @@ const Login = props => {
             <div className="column is-5-tablet is-4-desktop is-3-widescreen">
               <form className="box" onSubmit={onSubmit}>
                 <div className="field">
-                  <label className="label">Email</label>
+                  <label>Email</label>
                   <div className="control">
                     <input
                       type="email"
@@ -48,13 +48,13 @@ const Login = props => {
                       className="input"
                       required
                     />
-                    <span className="icon is-small is-left">
-                      <i className="fa fa-envelope" />
+                    <span className="icon is-small is-right">
+                      <i className="fas fa-at"></i>
                     </span>
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label">Password</label>
+                  <label>Password</label>
                   <div className="control">
                     <input
                       type="password"
@@ -66,7 +66,7 @@ const Login = props => {
                       required
                     />
                     <span className="icon is-small is-left">
-                      <i className="fa fa-lock" />
+                      <i className="fas fa-lock"></i>
                     </span>
                   </div>
                 </div>

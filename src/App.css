@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
 }
+
 .tst {
   display: flex;
   justify-content: center;
@@ -83,4 +84,14 @@
   background-size: cover;
 
   height: 100vh;
+}
+.control {
+  display: flex;
+  align-items: center;
+}
+.control i {
+  margin-left: 15px;
+}
+.field {
+  text-align: center;
 }

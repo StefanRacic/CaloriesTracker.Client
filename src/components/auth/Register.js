@@ -40,7 +40,7 @@ const Register = props => {
             <div className="column is-5-tablet is-4-desktop is-3-widescreen">
               <form className="box" onSubmit={onSubmit}>
                 <div className="field">
-                  <label className="label">Email</label>
+                  <label>Email</label>
                   <div className="control">
                     <input
                       type="email"
@@ -52,12 +52,12 @@ const Register = props => {
                       required
                     />
                     <span className="icon is-small is-left">
-                      <i className="fa fa-envelope" />
+                      <i class="fas fa-at"></i>
                     </span>
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label">Password</label>
+                  <label>Password</label>
                   <div className="control">
                     <input
                       type="password"
@@ -69,7 +69,7 @@ const Register = props => {
                       required
                     />
                     <span className="icon is-small is-left">
-                      <i className="fa fa-lock" />
+                      <i className="fas fa-lock" />
                     </span>
                   </div>
                 </div>

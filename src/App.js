@@ -5,6 +5,7 @@ import About from '../src/pages/About';
 import Login from '../src/components/auth/Login';
 import Register from '../src/components/auth/Register';
 import CalorieTracker from '../src/pages/CalorieTracker';
+import PrivateRoute from '../src/components/routing/PrivateRoute';
 
 import 'bulma/css/bulma.css';
 import '@fortawesome/fontawesome-free/css/all.css';
@@ -26,7 +27,7 @@ function App() {
               <Route exact path="/about" component={About} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
-              <Route exact path="/meals" component={CalorieTracker} />
+              <PrivateRoute exact path="/meals" component={CalorieTracker} />
             </Switch>
           </Fragment>
         </Router>
